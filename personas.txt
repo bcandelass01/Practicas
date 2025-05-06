@@ -1,0 +1,5 @@
+Ana López | true | 2500.75
+Luis Gómez | false | 134.20
+Marta Pérez | true | 320.00
+Carlos Ruiz | true | 850.50
+Elena Díaz | false | 45.90
