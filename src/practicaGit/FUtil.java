@@ -2,6 +2,9 @@ package practicaGit;
 
 import java.io.File;
 
+/**
+ * @author belen
+ */
 public class FUtil {
 
 	/**
