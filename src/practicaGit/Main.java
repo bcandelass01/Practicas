@@ -1,9 +1,12 @@
 package practicaGit;
 
 public class Main {
-
 	public static void main(String[] args) {
-		System.out.println(FUtil.existe("test.txt"));
-		System.out.println(FUtil.existe(""));
-	}
+        try {
+            System.out.println(FUtil.existe("archivo.txt"));
+            System.out.println(FUtil.existe("   "));
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
 }

@@ -5,11 +5,12 @@ import java.io.File;
 public class FUtil {
 
 	public static boolean existe(String filename) {
-		File file = new File(filename);
-		if (file.exists()) {
-		return true;
-		}
-		return false;
-		}
+		if (filename == null || filename.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre del fichero no puede estar vacío o solo contener espacios.");
+        }
+
+        File file = new File(filename);
+        return file.exists();
+    }
 
 }
